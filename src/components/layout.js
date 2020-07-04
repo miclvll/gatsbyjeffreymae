@@ -1,16 +1,19 @@
 import React from "react";
 import PropTypes from "prop-types";
 import {FaShoppingCart} from "react-icons/fa";
-import {StaticQuery,graphql} from "gatsby";
+import Navbar from "../globals/Navbar";
+//import {StaticQuery,graphql} from "gatsby";
 
 import "./bootstrap.min.css";
 import "./layout.css";
 
 
-const Layout =({children}
+const Layout =( 
+  {children}
 )=>(
 
 <>
+<Navbar/>
 <FaShoppingCart/>
 {children}
 </>
