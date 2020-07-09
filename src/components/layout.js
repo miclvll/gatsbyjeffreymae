@@ -1,27 +1,25 @@
-import React from "react";
-import PropTypes from "prop-types";
-import {FaShoppingCart} from "react-icons/fa";
-import Navbar from "../globals/Navbar";
+import React from "react"
+import PropTypes from "prop-types"
+//import {FaShoppingCart} from "react-icons/fa";
+import Navbar from "../globals/Navbar"
+import Footer from "../globals/Footer"
 //import {StaticQuery,graphql} from "gatsby";
 
-import "./bootstrap.min.css";
-import "./layout.css";
+import "./bootstrap.min.css"
+import "./layout.css"
 
+const Layout = ({ children }) => (
+  <>
+    <Navbar />
 
-const Layout =( 
-  {children}
-)=>(
+    {children}
 
-<>
-<Navbar/>
-<FaShoppingCart/>
-{children}
-</>
+    <Footer />
+  </>
 )
-
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
-};
+}
 
-export default Layout;
+export default Layout
